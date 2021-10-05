@@ -1,3 +1,13 @@
+https://campus.alkemy.org/challenges
+https://superheroapi.com/
+
+https://superheroapi.com/api/10157543912541816
+
+https://www.superheroapi.com/api.php/10157543912541816/731
+
+Formik
+https://www.paradigmadigital.com/dev/formik-desarrollando-formularios-react/
+
 Formulario de Login
 
 El formulario se deberá renderizar al ingresar a cualquier ruta si el usuario no está autenticado,
