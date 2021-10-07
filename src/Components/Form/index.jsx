@@ -1,8 +1,14 @@
-const Form = ()=>{
-    return(
-        <div>
-            Form
-        </div>
+import {Formik} from 'formik';
+
+const BasicForm = ()=>{
+    return (
+    <div>
+        form
+        {/* <Formik
+        
+        ></Formik> */}
+
+    </div>
     )
 }
-export default Form;
+export default BasicForm;
