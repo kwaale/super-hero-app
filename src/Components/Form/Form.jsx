@@ -5,8 +5,8 @@ const Form = (props)=>{
         handleSubmit, handleChange, values, errors, touched
     } = props;
     // console.log('handleChange',handleChange)
-    console.log('props',props)
-    console.log('values',values)
+    // console.log('props',props)
+    // console.log('values',values)
 
     return(
         <form onSubmit={handleSubmit}>
