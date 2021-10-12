@@ -1,8 +1,11 @@
 import {Formik} from 'formik';
 import Form from './Form';
+import { useDispatch,useSelector } from 'react-redux';
+import { primeraAccion } from '../../actions'
 
 const validation = (values)=>{
     console.log('funcion validation')
+    
     let errors = {}
     if(values.email === ''){
         errors.email = 'Email no debe estar vacio'
@@ -13,6 +16,7 @@ const validation = (values)=>{
     return errors
 }
 const BasicForm = ()=>{
+    const dispatch = useDispatch();
     return (
     <div>
         <Formik
@@ -25,6 +29,7 @@ const BasicForm = ()=>{
                     console.log(actions)
                     actions.setSubmitting(false)
                     actions.resetForm({values:{email:"",passport:""}})
+                    dispatch(primeraAccion());
                 },1500);
             }}
             validate = {validation}
