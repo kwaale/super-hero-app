@@ -1,23 +1,30 @@
-import { ErrorMessage, validateYupSchema } from "formik";
+// import { ErrorMessage, validateYupSchema } from "formik";
 
-const Form = ({handleSubmit, handleChange, values})=>{
+const Form = (props)=>{
+    const {
+        handleSubmit, handleChange, values, errors, touched
+    } = props;
+    // console.log('handleChange',handleChange)
+    console.log('props',props)
+    console.log('values',values)
+
     return(
         <form onSubmit={handleSubmit}>
             <label>Email:<input
             type='email'
             name='email'
             onChange={handleChange}
-            // value={values.emai}
+            value={values.email}
             />
-            {/* {error.email && touched.email && errors.email} */}
+            {errors.email && touched.email && errors.email}
             </label><br/>
             <label>Passport:<input
-            type='email'
-            name='email'
+            type='passport'
+            name='passport'
             onChange={handleChange}
-            // value={values.emai}
+            value={values.passport}
             />
-            {/* {error.email && touched.email && errors.email} */}
+            {errors.passport && touched.passport && errors.passport}
             </label><br/>
             <input type='submit' value='Send'/>
         </form>
