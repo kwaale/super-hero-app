@@ -18,13 +18,13 @@ const Form = (props)=>{
             />
             {errors.email && touched.email && errors.email}
             </label><br/>
-            <label>Passport:<input
-            type='passport'
-            name='passport'
+            <label>Password:<input
+            type='password'
+            name='password'
             onChange={handleChange}
-            value={values.passport}
+            value={values.password}
             />
-            {errors.passport && touched.passport && errors.passport}
+            {errors.password && touched.password && errors.password}
             </label><br/>
             <input type='submit' value='Send'/>
         </form>
