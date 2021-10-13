@@ -9,13 +9,15 @@ export function primeraAccion(){
         payload:console.log('Imprime payload')
     }
 }
-export function login(payload){
+//Revisar, no tiene que ser una action
+export function login(body){
+    console.log('body',body)
     return async (dispatch)=>{
         try {
-            const {data} = await axios.post('http://challenge-react.alkemy.org/');
-            data
+            const {data } = await axios.post('http://challenge-react.alkemy.org/', body);
+            localStorage.setItem('token', data.token);
         } catch (error) {
-            
+            console.error('EERROORR', error)
         }
         
     }
