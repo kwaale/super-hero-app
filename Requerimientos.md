@@ -3,7 +3,8 @@ https://superheroapi.com/
 
 https://superheroapi.com/api/10157543912541816
 
-https://www.superheroapi.com/api.php/10157543912541816/731
+Max id:732
+https://www.superheroapi.com/api.php/10157543912541816/732
 
 Formik
 https://www.paradigmadigital.com/dev/formik-desarrollando-formularios-react/

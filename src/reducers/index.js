@@ -1,16 +1,23 @@
-import {PRIMERA_ACTION } from '../actions/index'
+import { LOGIN, ERROR_LOGIN } from '../actions/index'
 const initialState = {
-    prueba:""
+    token:"",
+    errorLogin:false
 };
 
 //En este casso arrancamos con rootreducer
 
 export default function rootReducerPrimero(state = initialState, action){
     switch(action.type){
-        case PRIMERA_ACTION:
+        case LOGIN:
             return{
                 ...state,
-                //Cambiar accion
+                token:action.payload,
+                errorLogin:false
+            }
+        case ERROR_LOGIN:
+            return{
+                ...state,
+                errorLogin:action.payload
             }
         default:
             return{
